@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #subscribe-form {
+        background-color: rgb(124, 183, 243);
+        padding: 20px;
+      }
+
+      .form-eading {
+        font-size: 20px;
+        color: black;
+      }
+
+      .input-email {
+        font-size: 25px;
+        padding: 10px;
+        width: 500px;
+        background-image: url("at.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: 25px;
+        padding-left: 30px;
+        border: none;
+      }
+
+      .input-button {
+        font-size: 25px;
+        padding: 10px;
+        background-image: url(email-check.svg);
+        background-repeat: no-repeat;
+        background-size: 35px 35px;
+        background-color: rgb(232, 163, 236);
+        color: transparent;
+        background-position: center;
+        border: none;
+      }
+
+      .terms-checkbox {
+        margin-top: 20px;
+        display: inline-block;
+        color: black;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="/url" id="subscribe-form">
+      <h2 class="form-eading">Join our newsletter list</h2>
+      <label>
+        <input
+          type="text"
+          placeholder="e.g. johnDoe@yahoo.com"
+          required
+          autofocus
+          class="input-email"
+        />
+      </label>
+      <button class="input-button">SEND</button>
+      <div>
+      <input type="checkbox" class="terms-checkbox" required unchecked>
+      <p class="terms-checkbox">I agree with <a href="#">Terms and conditions</a></p>
+    </div>
+    </form>
+  </body>
+</html>
