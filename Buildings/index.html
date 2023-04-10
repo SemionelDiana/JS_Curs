@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buildings</title>
+</head>
+<style>
+    body {
+        background-color: #223;
+    }
+    .street {
+        border: 2px solid red;
+    }
+    .house {
+        width: 200px;
+        height: 300px;
+       
+        display: inline-block;
+
+    }
+    .house-roof {
+        width: 0px;
+        height: 0px;
+        border: 100px solid white;
+        border-top-width: 0px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: CornflowerBlue ;
+
+    }
+    .horn {
+        width: 30px;
+        height: 50px;
+        background-color: DarkCyan;
+
+        transform: translateX(30px) translateY(12px);
+    }
+    .house-wall {
+        background-color: Gainsboro;
+        height: 200px;
+        
+    }
+    .house-window {
+        background-color: antiquewhite;
+        width: 60px;
+        height: 60px;
+        border: 2px solid SlateGrey;
+
+        transform: translateX(70px) translateY(70px);
+    }
+    .separator-v {
+        width: 28px;
+        height: inherit;
+        border-right: 2px solid SlateGrey;
+        display: inline-block;
+    }
+    .separator-h {
+        width: 30px;
+        height: 28px ;
+
+        border-bottom: 2px solid SlateGrey;
+        display: inline-block;
+        vertical-align: top;
+
+        margin-left: -4px;
+    
+    }
+    .building-tall {
+        width: 300px;
+        height: 600px;
+        
+        background-color: red;
+        display: inline-block;
+    }
+</style>
+<body>
+    <div class="street">
+        <div class="house">
+            <div class="house-roof">
+                <div class="horn"></div>
+            </div> 
+            <div class="house-wall">
+                <div class="house-window">
+                    <div class="separator-v"></div>
+                    <div class="separator-h"></div>
+                </div>
+            </div>    
+        </div>
+        <div class="building-tall"></div>
+    </div>
+</body>
+</html>
