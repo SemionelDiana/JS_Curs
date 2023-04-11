@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+</head>
+
+<style>
+
+    body {
+        background-color: #456;
+        margin: 0;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu-nav {
+        background-color: #345;
+        margin-left: -300px;
+        transition: 0.5s;
+
+        width: 300px;
+
+        display: inline-block;
+    }
+
+    .menu-nav:target {
+        margin-left: 0px;
+    }
+
+    .menu-title {
+        margin: 0;
+        color: white;
+        padding: 20px 10px;
+        display: inline-block;
+    }
+
+    .menu-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li:first-child {
+        border-top: 1px solid #567;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 5px 10px;
+
+        display: block;
+        color:#ddd;
+        border-bottom: 1px solid #567;
+
+        vertical-align: top;
+    }
+
+    a:hover {
+        color: white;
+        background-color: #234;
+
+    }
+
+     a::before {
+        content: "✓";
+        padding-right: 10px;
+        color: green;
+    }
+
+    .unavailable::before {
+        content: "✕"; 
+        color: red;
+    }
+
+    .toggler::before {
+        display: none;
+    }
+
+    .toggler {
+        
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        background-color: brown;
+        border-radius: 30px;
+
+        text-align: center;
+        line-height: 50px;
+        margin-left: 25px;
+        margin-top: 70px;
+
+        display: inline-block;
+    }
+
+
+</style>
+<body>
+    
+    <nav class="menu-nav" id="menu">
+        <h2 class="menu-title">Our Cuisine</h2>
+        <ul class="menu-list">
+            <li><a href="#">SALAD</a></li>
+            <li><a class="unavailable" href="#">PIZZA</a></li>
+            <li><a href="#">KEBAB</a></li>
+            <li><a href="#">BURGER</a></li>
+            <li><a href="#">SOUP</a></li>
+        </ul>
+    </nav>
+    <a href="#menu" class="toggler">MENU</a>
+
+</body>
+</html>
