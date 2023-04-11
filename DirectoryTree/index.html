@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Tree</title>
+</head>
+<style>
+    body {
+        background-color: #222;
+    }
+    .tree {
+        color: white;
+        font-family: Arial;
+
+        font-size: 64px;
+
+    }
+    .folder {
+        padding: 18px 0 18px 60px;
+        line-height: 0;
+
+        background-image: url(images/tbd.png);
+        background-repeat: no-repeat;
+
+        list-style-type: "┠" ;
+    }
+    .folder:first-child {
+        list-style-type: "┎";
+    }
+    .folder:last-child {
+        list-style-type: "┖";
+    }
+    .name {
+        font-size: 18px;
+    }
+    .wip {
+        background-image: url(images/wip.png);
+    }
+    .done {
+        background-image: url(images/done.png);
+    }
+    .file {
+        padding: 18px 0 18px 60px;
+        line-height: 0;
+        font-size: 18px;
+        
+        margin-top: 10px;
+
+        background-image: url(images/file.png);
+        background-repeat: no-repeat;
+
+        list-style-type: "┠" ;
+    }
+    .file:first-child {
+        list-style-type: "┎";
+    }
+    .file:last-child {
+        list-style-type: "┖";
+    }
+</style>
+<body>
+    <ul class="tree">
+        <li class="folder"><div class="name">PROJECT [TBD]</div></li>
+        <li class="folder wip"><div class="name">PROJECT [WIP]</div></li>
+        <li class="folder done"><div class="name">PROJECT [DONE]</div>
+            <ul class="tree">
+                <li class="file"><div class="name"></div>FILE 1</div></li>
+                <li class="file"><div class="name"></div>FILE 2</div></li>
+            </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>
