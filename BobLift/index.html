@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Box Lift (margins)</title>
+    <!-- Q&A section -->
+    <!-- 
+    - Centrati pe orizontala toate blocurile - DONE
+    - Deplasati liftul in jos pe ecran pana la etajul intai - DONE
+    - Raspundeti la intrebarea: - daca vom sterge blocul "start" ce se va schimba?
+        In cazul meu, margin-top aplicat div-ului class="lift position", iese in afara parintelui 
+        (class="shaft position" ) si toate building-ul se plaseaza cu 415px in jos
+    - Raspundeti la intrebarea: - ce rol joaca blocul "start"? 
+    - este un element de reper, care ajuta altor elemente (copii) sa fie mai usor aramjate 
+    in pagina
+    -->
+
     <style>
         .position {
             margin:auto
@@ -43,7 +55,7 @@
 
     <div class="building position">
         <div class="shaft position">
-            <div class="start position"></div>
+            <!-- <div class="start position"></div> -->
             <div class="lift position">
                 BOB
             </div>
