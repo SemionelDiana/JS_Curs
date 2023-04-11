@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Tabs</title>
+<style>
+    .tabs {
+        /* border: 1px dotted black; */
+        list-style: none;
+        padding: 10;
+        margin: 20px;
+    }
+    .tabs-item {
+        border: 1px solid #e6e6e6;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        display: inline-block;
+
+        width: 100px;
+        height: 90px;
+
+        padding: 20px 10px;
+        margin: 5px;
+        text-align: center;
+        transition: 0.35s;
+    }
+    .tabs-item:hover {
+        background-color: #cccccc;
+
+    }
+    .tabs-img {
+        margin-bottom: 15px;
+    }
+    .tabs-link {
+        text-decoration: none;
+        color: #333;
+    }
+    .tabs-options {
+        background-color: #999999;
+        border-radius: 20px;
+
+        width: 32px;
+
+        transform: translateX(75px) translateY(-102px);
+        opacity: 0.0;
+    }
+    .tabs-options:hover  {
+       opacity: 1.0; 
+    }
+    .options-img {
+        width: 20px;
+        height: 20px;
+
+        padding: 2px;
+        padding-top: 5px;
+        
+    }
+</style>
+</head>
+<body>
+    <ul class="tabs">
+        <li 
+            class="tabs-item"
+            title="Go to my account">
+            <a class="tabs-link" href="https://github.com/">
+                <img class="tabs-img" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/github-icon.png" alt="">
+                <br>
+                Username
+            </a>
+            <div class="tabs-options">
+                <img class="options-img" src="https://icons.iconarchive.com/icons/bootstrap/bootstrap/48/Bootstrap-three-dots-vertical-icon.png" alt="">
+            </div>
+        </li>
+        <li 
+            class="tabs-item"
+            title="Open Facebook">
+            <a class="tabs-link" href="https://www.facebook.com/">
+                <img class="tabs-img" src="https://icons.iconarchive.com/icons/sicons/basic-round-social/48/facebook-icon.png" alt="">
+                <br>
+                Facebook
+            </a>
+            <div class="tabs-options">
+                <img class="options-img" src="https://icons.iconarchive.com/icons/bootstrap/bootstrap/48/Bootstrap-three-dots-vertical-icon.png" alt="">
+            </div>
+        </li>
+        <li    
+            class="tabs-item"
+            title="Watch YouTube">
+            <a class="tabs-link" href="https://www.youtube.com/">
+                <img class="tabs-img" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/youtube-icon.png" alt="">
+                <br>
+                YouTube
+            </a>
+            <div class="tabs-options">
+                <img class="options-img" src="https://icons.iconarchive.com/icons/bootstrap/bootstrap/48/Bootstrap-three-dots-vertical-icon.png" alt="">
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
