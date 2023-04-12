@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #345;
+    }
+    .button {
+        display: inline-block;
+        background-color: #fff;
+        box-shadow: 0 0 3px 1px #333;
+
+        border-radius: 50px;
+        margin: 20px;
+    }
+
+    .button:hover {
+        background-color: #777;
+    }
+    .button:hover a {
+        color: orange
+    }
+
+    .button a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+
+        display: inline-block;
+        padding: 7px 15px 2px 7px;
+
+        color: #777;
+       
+    }
+
+    .button a::before {
+        content: "";
+        display: inline-block;
+        background-image: 
+            url(img/download.svg),
+            linear-gradient(white, orange, white);
+        background-size: 
+            40px 40px, 59px -10px;
+        background-repeat: no-repeat;
+        background-position: center 2px;
+        
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        padding: 10px;
+        border-radius: 30px;
+
+         vertical-align: middle;
+
+    }
+
+    .button:target a::before {
+        animation: download 2s 5;
+    }
+
+    @keyframes download {
+        from {
+            background-position: 
+                center 2px,
+                0 0;
+        }
+        to {
+            background-position: 
+                center 2px,
+                0 30px;
+            }
+    }
+
+</style>
+<body>
+    <div class="button" id="download-button">
+        <a href="#download-button">DOWNLOAD</a>
+    </div>
+</body>
+</html>
