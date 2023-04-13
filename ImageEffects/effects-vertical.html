@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Effects</title>
+    <style>
+        body {
+            background-color: #234;
+        }
+
+        #image-effects {
+            border: 3px solid white;
+            width: 400px;
+            height: 600px;
+
+            background-image: url(images/coffee.jpeg);
+            margin: 40px auto;
+
+        }
+
+        #image-effects .slide {
+            width: 400px;
+            height: 300px;
+
+            border-bottom: 3px solid white;
+
+            background-image: url(images/coffee.jpeg);
+            filter: grayscale();
+
+        }
+
+        #image-effects .slide a {
+            text-decoration: none;
+            color: white;
+
+            display: block;
+
+            transform: translateX(200px) translateY(280px);
+        }
+
+        #up:target .slide {
+            height: 50px;
+            transition: .5s;
+        }
+
+        #down:target .slide {
+            height: 550px;
+            transition: .5s;
+        }
+
+         #up:target .slide a {
+            transform: translateX(200px) translateY(30px);
+            transition: .5s;
+         }
+        #down:target .slide a {   
+            transform: translateX(200px) translateY(530px);
+            transition: .5s;
+         }
+    </style>
+</head>
+<body>
+
+    <div id="up">
+        <div id="down">
+            <div id="image-effects">
+                <div class="slide">
+                    <a href="#up">▲</a>
+                    <a href="#down">▼</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Effects</title>
+    <style>
+        body {
+            background-color: #234;
+        }
+
+        #image-effects {
+            border: 3px solid white;
+            width: 600px;
+            height: 400px;
+
+            background-image: url(images/railway.jpeg);
+            margin: 140px auto;
+
+        }
+
+        #image-effects .slide {
+            width: 300px;
+            height: 400px;
+
+            border-right: 3px solid white;
+
+            background-image: url(images/railway.jpeg);
+            filter: grayscale();
+
+        }
+
+        #image-effects .slide a {
+            text-decoration: none;
+            color: white;
+
+            display: inline-block;
+
+            transform: translateX(283px) translateY(191px);
+        }
+
+        #right:target .slide {
+            width: 550px;
+            transition: .5s;
+
+        }
+
+        #right:target .slide a {   
+            transform: translateX(534px) translateY(191px);
+            transition: .5s;
+         }
+
+        #left:target .slide {
+            width: 50px;
+            transition: .5s;
+
+        }
+        
+         #left:target .slide a {
+            transform: translateX(34px) translateY(191px);
+            transition: .5s;
+         }
+        
+    </style>
+</head>
+<body>
+
+    <div id="left">
+        <div id="right">
+            <div id="image-effects">
+                <div class="slide">
+                    <a href="#left">◀</a>
+                    <a href="#right">▶</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
