@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serifs;
+}
+
+header, section, footer {
+    border: 1px dotted #999;
+    padding: 20px 0;
+}
+
+.card-employee {
+    border: 1px solid #BBB;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px -1px #666;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.card-employee:hover {
+    box-shadow: 2px 2px 5px -1px #666;
+    transform: translateX(-1px) translateY(-1px);
+}
+
+.card-employee h1 {
+    transform: translateY(280px);
+    font-size: 30px;
+    margin: 0;
+}
+
+.card-employee img {
+    transform: translateY(-45px);
+}
+
+.card-employee p {
+    margin: 0;
+}
+
+.card-employee .collapse {
+    height: 0px;
+    overflow: hidden;
+}
+
+.card-employee:target .collapse {
+    height: 160px;
+}
+
+
+.card-employee h2 {
+    margin-bottom: 0;
+}
+
+.card-employee ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.card-employee .expand.m {
+    padding: 0 12px;
+}
+
+.card-employee .expand {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border: 3px solid green;
+    color: darkgreen;
+    margin-top: 10px;
+    padding: 0 8px;
+    border-radius: 100%;
+}
+
+.card-employee:target .expand:not(.m){
+    display: none;
+}
