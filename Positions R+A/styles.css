@@ -1,0 +1,29 @@
+body {
+    background-color: #333;
+}
+
+.parent div {
+    width: 100px;
+    height: 100px;
+}
+
+.parent  .child-1 {
+    background-color: #555;
+    position: relative;
+    left: 100px;
+    top: 110px;
+}
+.parent  .child-2 {
+    background-color: #888;
+    position: relative;
+    left: 45px;
+    top: -50px;
+    z-index: -1;
+}
+.parent  .child-3 {
+    background-color: #bbb;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
